@@ -6,7 +6,6 @@
 
 cd terraform/project-1
 terraform init
-
 terraform plan
 terraform apply
 terraform apply -var-file="dev.tfvars"
