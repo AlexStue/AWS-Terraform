@@ -1,6 +1,12 @@
+
 variable "region" {
   description = "AWS region"
   type        = string
+}
+
+variable "regions" {
+  description = "List of regions for Global Accelerator"
+  type        = list(string)
 }
 
 variable "public_subnet_configs" {
@@ -16,7 +22,4 @@ variable "private_subnets" {
   type        = list(string)
 }
 
-variable "regions" {
-  description = "List of regions for Global Accelerator"
-  type        = list(string)
-}
+
