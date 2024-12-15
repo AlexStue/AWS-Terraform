@@ -1,33 +1,38 @@
 # AWS-Terraform
 
-#-----------------------------
-
-
+```bash
 terraform init
 terraform plan -out=tfplan
 terraform apply tfplan
 terraform destroy -auto-approve
+```
+
+# Project 1
+
+## Target:
+![alt text](pics/image.png)
+
+## Structure:
+
+- Main modules:
+    - VPC
+    - IGW
+    - Security Group HTTP
+    - Route Table to IGW
+- AZ Modules:
+    - Subnet public in AZ1 & AZ2
+    - NAT Gateway in public subnet
+    - Instances in private subnets
+    - EFS Mount
+- ALB
+- Global Accelerator
+- Memory:
+    - EFS
+    - DB Aurora AZ1
+    - DB Aurora Replica AZ2
 
 
-
-
-#-----------------------------
-
-Key Elements of This Structure
-modules/:
-Contains reusable modules for components like VPC, EC2, or RDS.
-Avoids repetition and ensures standardization across projects.
-Project Directories (e.g., project-a/):
-Each project is subdivided by environments like dev, staging, and prod.
-Environment-specific configurations (e.g., variables.tf) ensure isolation.
-Shared Resources (e.g., shared/):
-Global or regional configurations (e.g., networking) shared across multiple projects.
-Maintains a central place for resources used by all projects.
-backend.tf:
-Specifies the remote backend configuration for Terraform state files (e.g., S3, Azure Blob Storage, Terraform Cloud).
-
-
-#-----------------------------
+# ---
 
 
 
