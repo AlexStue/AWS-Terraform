@@ -9,14 +9,17 @@ output "route_table_id_public" {
   value       = aws_route_table.this.id
 }
 
-output "public_subnet_az1_id" {
+output "public_subnet_id" {
   description = "The ID of the public subnet in AZ1"
-  value       = aws_subnet.public_subnet_az1.id
+  value       = aws_subnet.public_subnet.id
 }
-
-output "nat_gateway_az1_id" {
+# output "public_subnet_id" {
+#   description = "The ID of the public subnet"
+#   value       = aws_subnet.public.id
+# }
+output "nat_gateway_id" {
   description = "The ID of the NAT Gateway in AZ1"
-  value       = aws_nat_gateway.nat_az1.id
+  value       = aws_nat_gateway.nat.id
 }
 
 output "route_table_id_nat" {
@@ -24,7 +27,7 @@ output "route_table_id_nat" {
   value       = aws_route_table.nat_route_table.id
 }
 
-output "private_subnet_az1_id" {
+output "private_subnet_id" {
   description = "The ID of the private subnet in AZ1"
-  value       = aws_subnet.private_subnet_az1.id
+  value       = aws_subnet.private_subnet.id
 }
