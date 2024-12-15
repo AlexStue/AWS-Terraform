@@ -41,7 +41,7 @@ Structure:
         cidrBlock: '10.0.4.0/24
         Associate with route table
 
-- 
+- NAT Gateway
 
 
 #-----------------------------
