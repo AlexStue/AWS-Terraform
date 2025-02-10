@@ -6,6 +6,11 @@ variable "region" {
   type        = string
 }
 
+variable "availability_zone" {
+  description = "availability_zone"
+  type        = string
+}
+
 variable "private_subnet_id" {
   description = "The ID of the private subnet where the instance will be launched"
   type        = string
