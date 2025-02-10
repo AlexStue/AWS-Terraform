@@ -9,8 +9,10 @@ terraform destroy -auto-approve
 
 # Project 1
 
-## Target:
-![alt text](pics/image.png)
+## Inspiring Structures:
+![alt text](pics/image-1.png)
+or
+![alt text](pics/image-2.png)
 
 ## Structure:
 
@@ -25,23 +27,13 @@ terraform destroy -auto-approve
     - Instances in private subnets
     - EFS Mount
 - ALB
-- Global Accelerator
-- Memory:
+- (Global Accelerator)
+- (Memory):
     - EFS
     - DB Aurora AZ1
     - DB Aurora Replica AZ2
 
 
-# ---
+## ---
 
 
-
-
-
-
-
-
-
-
-
-#-----------------------------
